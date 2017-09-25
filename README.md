@@ -20,10 +20,10 @@ This site is a collection of [Zain](http's slide presentations in Go
  $ present
  ```
 
-Th slides will be available at [](http://127.0.0.1:3999/)
+Th slides will be available at [http://127.0.0.1:3999/](http://127.0.0.1:3999/)
 
 # Online
-You can view current version of slides at [](https://go-talks.appspot.com/github.com/zainfathoni/go-talks/home.article)
+You can view current version of slides at [https://go-talks.appspot.com/github.com/zainfathoni/go-talks/home.article](https://go-talks.appspot.com/github.com/zainfathoni/go-talks/home.article)
 
 # License and Materials
 
