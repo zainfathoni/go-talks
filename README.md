@@ -1,7 +1,7 @@
 # Usage
 
 This site is a collection of [Zain](http's slide presentations in Go 
-[[https://godoc.org/golang.org/x/tools/present][present]] format.
+[present](https://godoc.org/golang.org/x/tools/present) format.
 
 # Installation
 
