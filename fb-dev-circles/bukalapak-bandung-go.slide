@@ -40,7 +40,7 @@ Well, even Facebook has several open source projects in Go 😁
 
 - Microservices at a glance
 - Considering Go
-- What we expect
+- What we expected
 - What we found out
 - What we learnt
 
@@ -84,7 +84,15 @@ e.g. Notification Squad is given the freedom to decide their own teck stacks for
 
 * Considering Go
 
-* What we expect
+* Considering Go
+
+Just like the other teams, my team which is responsible for [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]] Service is also given the freedom to decide our own tech stacks.
+
+We did it by using an *extremely*dumb* laundry-list comparison as an initial considerations. 🙃
+
+.image images/Initial_Considerations.png _ 970
+
+* What we expected
 
 * What we found out
 
