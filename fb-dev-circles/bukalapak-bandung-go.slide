@@ -52,31 +52,27 @@ Well, even Facebook has several open source projects in Go 😁
 
 * Microservices at a glance
 
-Monoliths and Microservices
+.image images/sketch.png 500 _
 
-.image images/sketch.png 400 _
+.caption _Monoliths_and_Microservices_ in [[https://martinfowler.com/articles/microservices.html][Microservices]] article by [[https://twitter.com/boicy][James Lewis]] & [[https://martinfowler.com/][Martin Fowler]]
 
 : Instance Scalability
 
-.link https://martinfowler.com/articles/microservices.html
-
 * Microservices at a glance
-
-Monoliths and Microservices Databases
 
 : Technological Independence
 
-.image images/decentralised-data.png 400 _
+.image images/decentralised-data.png 500 _
 
-.link https://martinfowler.com/articles/microservices.html
+.caption _Monoliths_and_Microservices_Databases_ in [[https://martinfowler.com/articles/microservices.html][Microservices]] article by [[https://twitter.com/boicy][James Lewis]] & [[https://martinfowler.com/][Martin Fowler]]
 
 * Microservices at a glance
 
-.image images/Microservice_Architecture.png 450 _
+.image images/Microservice_Architecture.png 500 _
 
 : In Bukalapak, the architecture is a little bit more complex, but this image represents the main idea of Bukalapak's Microservices Architecture
 
-.link http://microservices.io/patterns/microservices.html
+.caption _Fictitious_e-commerce_application_ in [[http://microservices.io/patterns/microservices.html][Pattern: Microservice Architecture]]
 
 * Microservices at a glance
 
@@ -140,3 +136,5 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 * What we learnt
 
 .link http://mjk.space/5-things-about-programming-learned-with-go/
+
+.caption _Gopher_ by [[https://www.instagram.com/reneefrench/][Renée French]]
