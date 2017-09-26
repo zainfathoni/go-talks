@@ -11,10 +11,30 @@ https://t.me/zainfathoni
 
 * License and Materials
 
-This presentation is a collaboration of [[https://bukalapak.com][Bukalapak]] Bandung team members.
+This presentation is a collaboration of [[https://www.bukalapak.com][Bukalapak]] Bandung team members.
 
 This presentation is licensed under the [[https://creativecommons.org/licenses/by-sa/4.0/][Creative Commons Attribution-ShareAlike 4.0 International]] licence.
 
 The materials for this presentation are available on GitHub:
 
 .link https://github.com/zainfathoni/go-talks
+
+* Introduction
+
+- What? Bukalapak Bandung?
+
+Yes, Bukalapak had established a _Representative Office_ in Bandung for a while.
+One of the teams in the office is developing [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]], which is using Go.
+
+- What? *Go*—a language developed by *Google*'s team—in a *Facebook* Developer Circles talk?
+
+Well, even Facebook has an open source project in Go 😁,
+e.g. [[https://github.com/facebook/fbtracert][https://github.com/facebook/fbtracert]]
+
+* Outline
+
+- Microservices at a glance
+- Considering Go
+- What we expect
+- What we found out
+- What we learnt
