@@ -102,13 +102,23 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 .image images/Final_Comparisons.png 570 _
 
+* Expectations vs Reality
+
 * What we expected
+
+- Go is either an Object Oriented language or an Imperative language
+- Database migration tools is reliable enough
+- ORM support is reliable enough
 
 * What we found out
 
+- Go is a mix of Imperative, Object Oriented, and Functional language
+- Database migration tools is cumbersome
+- ORM library acts weirdly
 - Endless refactoring, roughly almost 50% of our codes are refactored, even before the product went live
 
 * What we learnt
 
-.link http://mjk.space/5-things-about-programming-learned-with-go/
+* What we learnt
 
+.link http://mjk.space/5-things-about-programming-learned-with-go/
