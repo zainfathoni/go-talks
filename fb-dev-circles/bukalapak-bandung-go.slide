@@ -21,19 +21,18 @@ The materials for this presentation are available on GitHub:
 
 This particular presentation slide is accessible online at:
 
-.link http://go-talks.appspot.com/github.com/zainfathoni/go-talks/fb-dev-circles/bukalapak-bandung-go.slide
+.link http://bit.ly/bukalapak-go
 
 * Introduction
 
 - What? Bukalapak Bandung?
 
-Yes, Bukalapak had established a _Representative Office_ in Bandung for a while.
+Yes, Bukalapak had established a _Representative_Office_ in Bandung for a while.
 One of the teams in the office is developing [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]], which is using Go.
 
 - What? *Go*—a language developed by *Google*'s team—in a *Facebook* Developer Circles talk?
 
-Well, even Facebook has an open source project in Go 😁,
-e.g. [[fbtracert][https://code.facebook.com/projects/1711915879059279/fbtracert/]]
+Well, even Facebook has an open source project in Go 😁, e.g. [[https://code.facebook.com/projects/1711915879059279/fbtracert/][fbtracert]]
 
 * Outline
 
