@@ -74,10 +74,12 @@ It enables different tech stacks to be employed in a single application.
 
 Just as [[https://www.bukalapak.com][Bukalapak]] stated in its [[https://stackoverflow.com/jobs/companies/bukalapak][Stack Overflow Jobs]] company page.
 
-: Presenter notes (first paragraph)
-: Presenter notes (subsequent paragraph(s))
+_Bukalapak_values_ *freedom*and*experimentation* _,_and_we_believe_there_are_no_silver_bullet_or_one-size-fits-all_in_terms_of_tech_stack._
 
-Therefore, each squad in [[https://www.bukalapak.com][Bukalapak]] is free to choose their own tech stacks responsibly.
+_We_are_proudly_ *polyglot* _and_never_shy_away_from_trying_out_new_tech_or_stack._We_started_our_tech_with_ *Ruby* _,_and_we_have_now_spread_into_ *Golang,*Python,*Elixir*and*Node.js* _to_power_hundreds_of_our_microservices._
+
+_The_key_culture_of_our_engineering_is_that_teams_are_ *free* _to_make_their_own_case_regarding_what_tech_they_choose_to_use_for_any_stories_they_are_working_on_with._
+
 e.g. Notification Squad is given the freedom to decide their own teck stacks for their [[https://engineering.bukalapak.io/onsite-notification-service/][Onsite Notification Service]].
 
 * Considering Go
