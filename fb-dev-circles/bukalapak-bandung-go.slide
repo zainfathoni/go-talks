@@ -25,14 +25,16 @@ This particular presentation slide is accessible online at:
 
 * Introduction
 
-- What? Bukalapak Bandung?
+*What?*Bukalapak*Bandung?*
 
 Yes, Bukalapak had established a _Representative_Office_ in Bandung for a while.
 One of the teams in the office is developing [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]], which is using Go.
 
-- What? *Go*—a language developed by *Google*'s team—in a *Facebook* Developer Circles talk?
+*What?*Go*—a language developed by *Google*'s team—in a *Facebook* Developer Circles talk?
 
-Well, even Facebook has an open source project in Go 😁, e.g. [[https://code.facebook.com/projects/1711915879059279/fbtracert/][fbtracert]]
+Well, even Facebook has several open source projects in Go 😁
+
+.link https://github.com/facebookgo
 
 * Outline
 
@@ -41,3 +43,52 @@ Well, even Facebook has an open source project in Go 😁, e.g. [[https://code.f
 - What we expect
 - What we found out
 - What we learnt
+
+* Microservices at a glance
+
+* Microservices at a glance
+
+Monoliths and Microservices
+
+.image images/sketch.png 400 _
+
+.link https://martinfowler.com/articles/microservices.html
+
+* Microservices at a glance
+
+Monoliths and Microservices Databases
+
+.image images/decentralised-data.png 400 _
+
+.link https://martinfowler.com/articles/microservices.html
+
+* Microservices at a glance
+
+.image images/Microservice_Architecture.png 450 _
+
+.link http://microservices.io/patterns/microservices.html
+
+* Microservices at a glance
+
+It enables different tech stacks to be employed in a single application.
+
+Just as [[https://www.bukalapak.com][Bukalapak]] stated in its [[https://stackoverflow.com/jobs/companies/bukalapak][Stack Overflow Jobs]] company page.
+
+: Presenter notes (first paragraph)
+: Presenter notes (subsequent paragraph(s))
+
+Therefore, each squad in [[https://www.bukalapak.com][Bukalapak]] is free to choose their own tech stacks responsibly.
+e.g. Notification Squad is given the freedom to decide their own teck stacks for their [[https://engineering.bukalapak.io/onsite-notification-service/][Onsite Notification Service]].
+
+* Considering Go
+
+* What we expect
+
+* What we found out
+
+- Endless refactoring, roughly almost 50% of our codes are refactored, even before the product went live
+
+* What we learnt
+
+.link http://mjk.space/5-things-about-programming-learned-with-go/
+
