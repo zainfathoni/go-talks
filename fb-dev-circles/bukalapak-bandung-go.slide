@@ -92,6 +92,12 @@ We did it by using an *extremely*dumb* laundry-list comparison as an initial con
 
 .image images/Initial_Considerations.png _ 970
 
+Then we dug down deeper to the nominees, *Rust* and *Go*.
+
+* Considering Go
+
+.image images/Final_Comparisons.png 570 _
+
 * What we expected
 
 * What we found out
