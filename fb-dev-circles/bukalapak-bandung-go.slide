@@ -9,18 +9,14 @@ zain.fathoni@bukalapak.com
 https://t.me/zainfathoni
 @zainfathoni
 
--- My Side Projects --
-
 https://www.idgolang.com
-👨🏻‍💻🇮🇩  Go tutorial screencasts in Bahasa Indonesia.
+👨🏻‍💻🇮🇩 My Go tutorial screencasts in Bahasa Indonesia.
 
 https://ojekbelanja.id
-🛵🛒 a sandbox project which hopefully might be useful someday.
-
--- My Fellow Bukalapak Software Engineer Side Project --
+🛵🛒 My sandbox project which hopefully might be useful someday.
 
 https://www.idrails.com
-👨🏻‍💻🇮🇩  Ruby on Rails tutorial screencasts in Bahasa Indonesia.
+👨🏻‍💻🇮🇩 My fellow Bukalapak Software Engineer's Ruby on Rails tutorial screencasts in Bahasa Indonesia.
 
 * License and Materials
 
@@ -39,6 +35,8 @@ This particular presentation slide is accessible online at:
 * Introduction
 
 *What?*Bukalapak*Bandung?*
+
+.image images/bukalapak-logo.png
 
 Yes, Bukalapak had established a _Representative_Office_ in Bandung for a while.
 One of the teams in the office is developing [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]], which is using Go.
