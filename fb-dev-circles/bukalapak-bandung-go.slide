@@ -51,10 +51,10 @@ Well, even Facebook has several open source projects in Go 😁
 
 - Microservices at a glance
 - Considering Go
+- What we love
 - What we expected
 - What we found out
 - What we learnt
-- What we love
 
 * Microservices at a glance
 
@@ -112,6 +112,15 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 .image images/Final_Comparisons.png 570 _
 
+* What we love
+
+* What we love
+
+- gofmt
+- error handling
+- defer
+- interface
+
 * Expectations vs Reality
 
 * What we expected
@@ -148,9 +157,3 @@ Go favors Composition over Inheritance, so we should code in Go way, not OOP way
 * What we learnt
 
 .link http://mjk.space/5-things-about-programming-learned-with-go/
-
-* What we love
-
-* What we love
-
-- gofmt
