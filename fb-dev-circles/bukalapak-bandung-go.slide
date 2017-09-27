@@ -51,6 +51,7 @@ Well, even Facebook has several open source projects in Go 😁
 - What we expected
 - What we found out
 - What we learnt
+- What we love
 
 * Microservices at a glance
 
@@ -141,4 +142,8 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 .link http://mjk.space/5-things-about-programming-learned-with-go/
 
-.caption _Gopher_ by [[https://www.instagram.com/reneefrench/][Renée French]]
+* What we love
+
+* What we love
+
+- gofmt
