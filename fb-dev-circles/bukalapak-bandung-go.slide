@@ -117,9 +117,10 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 * What we love
 
 - gofmt
-- error handling
 - defer
 - interface
+- Error Handling
+- First Class Function
 
 * Expectations vs Reality
 
