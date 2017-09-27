@@ -113,23 +113,29 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 * What we expected
 
-- Go is either an Object Oriented language or an Imperative language
-- Structuring Go codes is as simple as an ordinary MVC web applications
+- Since Go provide an Interface feature, we could code in common Object Oriented Programming way
+- Structuring Go codes is as simple as common MVC web applications
 - Database migration tools is reliable enough
 - ORM support is reliable enough
 - Go Interface feature is quite powerful to mock actual implementations for testing purpose
 - Since we're writing from scratch, there should be not much refactoring necessary
 
-* What we expected
+* Expectations vs Reality #1
 
-** Go is either an Object Oriented language or an Imperative language
+- Expectation
+
+Since Go provide an Interface feature, we could code in common Object Oriented Programming way
+
+- Reality
 
 .link https://golang.org/doc/faq#Is_Go_an_object-oriented_language
 
+Go favors Composition over Inheritance, so we should code in Go way, not OOP way
+
 * What we found out
 
-- Go is a mix of Imperative, Object Oriented, and Functional language
-- Go folder structures are *library-driven* or *package-driven*, instead of *role-driven* as in ordinary MVC web applications
+- Go favors Composition over Inheritance, so we should code in Go way, not OOP way
+- Go folder structures are *library-driven* or *package-driven*, instead of *role-driven* as in common MVC web applications
 - Database migration tools is cumbersome
 - ORM library acts weirdly
 - Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
