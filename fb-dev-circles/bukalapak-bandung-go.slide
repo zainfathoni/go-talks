@@ -116,7 +116,8 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 * What we love
 
-- gofmt
+- gofmt, golint, goreturn, etc.
+- explicit variable declaration & usage checking
 - defer
 - interface
 - Error Handling
