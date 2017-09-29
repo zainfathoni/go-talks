@@ -121,9 +121,9 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 - Mocking using Interface
 - Explicit variable declaration & usage checking
 - Multiple returns & multiple assignments
-- Error Handling
-- gofmt, golint, goreturn, etc.
-- defer
+- Error handling
+- Defer statement
+- gotools: gofmt, golint, goreturn, etc.
 - First Class Function
 - Concurrency
 
@@ -168,6 +168,24 @@ We can make sure that *SaySomething()* calls *Speak()* method correctly.
 .play codes/cat/main.go /START TestSaySomething OMIT/,/END TestSaySomething OMIT/ HLSaySomething
 
 It's all done without modifying the *Dog* type at all, again.
+
+* Explicit variable declaration & usage checking
+
+Variables should be declared explicitly.
+
+  var b bool       // Declaration
+  var i int = 10   // Declaration & Assignment
+  s := "Bukalapak" // Short Declaration & Assignment
+
+Undefined variable causes compilation error.
+
+.play codes/declaration/main.go /START main OMIT/,/END main OMIT/
+
+So does unused variable.
+
+.play codes/usage/main.go /START main OMIT/,/END main OMIT/
+
+Since Go is a [[https://blog.golang.org/go15gc][*Garbage-Collected*]] language, these are quite important to help us avoid memory leaks.
 
 * Expectations vs Reality
 
