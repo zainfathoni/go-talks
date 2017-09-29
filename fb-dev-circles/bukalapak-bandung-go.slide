@@ -205,6 +205,30 @@ It is commonly used to return error value, e.g. [[https://golang.org/pkg/strconv
 
 .play codes/parse_bool/main.go /^func main/,/^}/
 
+* Error handling
+
+Many programming languages handle errors by treating them as *exceptions*.
+If errors are merely return values why should we treat them differently? We shouldn’t.
+
+So, instead of using an implicit try-catch block to handle exceptions, we just use the multiple results of functions in Go.
+
+.play codes/print_bool/main.go /START PrintBool OMIT/,/END PrintBool OMIT/
+
+* Error handling
+
+It forces us to handle the error value. It's almost impossible to accidentally ignore the error value.
+If we forget to assign the returned error to a variable:
+
+.play codes/forget_error/main.go /^\tb/,/\)$/
+
+If we forget to use the error value assigned:
+
+.play codes/unused_error/main.go /^\tb/,/\)$/
+
+However, we could still ignore the error *intentionally* by assigning the error into [[https://golang.org/doc/effective_go.html#blank][the blank identifier]]
+
+.play codes/blank_error/main.go /^\tb/,/\)$/
+
 * Expectations vs Reality
 
 * What we expected
