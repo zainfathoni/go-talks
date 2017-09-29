@@ -25,6 +25,7 @@ func SaySomething(a Animal) { // HLSaySomething
 // END SaySomething OMIT
 
 // START main OMIT
+
 func main() {
 	dog := Dog{name: "Charlie"}
 	SaySomething(dog) // HLSaySomething
