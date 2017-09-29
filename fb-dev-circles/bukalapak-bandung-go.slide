@@ -229,6 +229,17 @@ However, we could still ignore the error *intentionally* by assigning the error 
 
 .play codes/blank_error/main.go /^\tb/,/\)$/
 
+* Defer statement
+
+A [[https://tour.golang.org/flowcontrol/12][defer]] statement defers the execution of a function until the surrounding function returns.
+
+The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+
+.play codes/defer/main.go /^func main/,/^}/
+
+It is commonly used to defer _'clean_up'_ functions execution.
+It is put right after the _'dirty'_ functions to group the same context together.
+
 * Expectations vs Reality
 
 * What we expected
