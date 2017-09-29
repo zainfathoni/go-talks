@@ -120,7 +120,7 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 - Interface
 - Mocking using Interface
 - Explicit variable declaration & usage checking
-- Multiple returns & multiple assignments
+- Multiple assignments & multiple results
 - Error handling
 - Defer statement
 - gotools: gofmt, golint, goreturn, etc.
@@ -186,6 +186,24 @@ So does unused variable.
 .play codes/usage/main.go /START main OMIT/,/END main OMIT/
 
 Since Go is a [[https://blog.golang.org/go15gc][*Garbage-Collected*]] language, these are quite important to help us avoid memory leaks.
+
+* Multiple assignments & multiple results
+
+Multiple variables can be assigned in a single line.
+
+  b, i, s := true, 10, "Bukalapak" // This line is equivalent with the previous 3 lines of assignments
+
+Therefore, it's possible for a function to return multiple results.
+
+  func swap(x, y string) (string, string) {
+    return y, x
+  } 
+
+It is commonly used to return error value, e.g. [[https://golang.org/pkg/strconv/#ParseBool][strconv.ParseBool()]].
+
+  func ParseBool(str string) (bool, error)
+
+.play codes/parse_bool/main.go /^func main/,/^}/
 
 * Expectations vs Reality
 
