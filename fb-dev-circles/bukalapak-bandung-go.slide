@@ -155,6 +155,8 @@ Then automatically our previous *Dog* type can satisfy this *Animal* interface w
 
 .play codes/animal/main.go /START main OMIT/,/END main OMIT/ HLSaySomething
 
+.caption No *implement* keyword required
+
 * Mocking using Interface
 
 We want to test *SaySomething()* by giving it another type to mock *Dog* ability to *Speak()*, let's say it's a *Cat*.
