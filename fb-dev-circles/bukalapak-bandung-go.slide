@@ -116,18 +116,18 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 * What we love
 
-- Receiver
+- Method Receiver
 - Interface
 - Mocking using Interface
-- gofmt, golint, goreturn, etc.
-- explicit variable declaration & usage checking
-- multiple returns & multiple assignments
-- defer
+- Explicit variable declaration & usage checking
+- Multiple returns & multiple assignments
 - Error Handling
+- gofmt, golint, goreturn, etc.
+- defer
 - First Class Function
 - Concurrency
 
-* Receiver
+* Method Receiver
 
 Let's say we have a *Dog* type which can *Speak()*.
 
@@ -202,6 +202,6 @@ Go favors Composition over Inheritance, so we should code in Go way, not OOP way
 
 * What we learnt
 
-* What we learnt
+* References
 
 .link http://mjk.space/5-things-about-programming-learned-with-go/
