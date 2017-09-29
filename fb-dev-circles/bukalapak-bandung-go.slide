@@ -118,6 +118,7 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 - Receiver
 - Interface
+- Mocking using Interface
 - gofmt, golint, goreturn, etc.
 - explicit variable declaration & usage checking
 - multiple returns & multiple assignments
@@ -130,22 +131,29 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 Let's say we have a *Dog* type which can *Speak()*.
 
-.code codes/animal/main.go /START Dog OMIT/,/END Dog OMIT/
+.code codes/dog/main.go /START Dog OMIT/,/END Dog OMIT/
 
-.code codes/animal/main.go /START Speak OMIT/,/END Speak OMIT/ HLSpeak
+.code codes/dog/main.go /START Speak OMIT/,/END Speak OMIT/ HLSpeak
 
 By having *(d*Dog)* as a [[https://tour.golang.org/methods/3][receiver]], we can call *Speak()* method this way.
 
-.play codes/animal/main.go /START Bark OMIT/,/END Bark OMIT/ HLSpeak
+.play codes/dog/main.go /START Bark OMIT/,/END Bark OMIT/
 
 *Receiver* enables us to add our logic to any type we want, without modifying the type declaration at all.
 
 * Interface
 
-If we define an *Animal* interface with the *Speak()* method
+Then let's define an *Animal* interface with the *Speak()* method.
 
 .code codes/animal/main.go /START Animal OMIT/,/END Animal OMIT/ HLSpeak
 
+We want that animal to *SaySomething()*.
+
+.code codes/animal/main.go /START SaySomething OMIT/,/END SaySomething OMIT/ HLSaySomething
+
+Then automatically our previous *Dog* type can satisfy this *Animal* interface without needing to change anything in *Dog* declaration & implementation.
+
+.play codes/animal/main.go /START main OMIT/,/END main OMIT/ HLSaySomething
 
 * Expectations vs Reality
 

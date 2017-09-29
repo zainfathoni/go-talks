@@ -1,28 +1,12 @@
 package main
 
-// START Dog OMIT
-
 type Dog struct {
 	name string
 }
 
-// END Dog OMIT
-
-// START Speak OMIT
-
-func (d Dog) Speak() string { // HLSpeak
+func (d Dog) Speak() string {
 	return "Woof!"
 }
-
-// END Speak OMIT
-
-// START Bark OMIT
-
-func Bark(d Dog) {
-	println(d.Speak())
-}
-
-// END Bark OMIT
 
 // START Animal OMIT
 
@@ -33,13 +17,17 @@ type Animal interface {
 // END Animal OMIT
 
 // START SaySomething OMIT
-func SaySomething(a Animal) {
+
+func SaySomething(a Animal) { // HLSaySomething
 	println(a.Speak())
 }
 
 // END SaySomething OMIT
 
+// START main OMIT
 func main() {
 	dog := Dog{name: "Charlie"}
-	SaySomething(dog)
+	SaySomething(dog) // HLSaySomething
 }
+
+// END main OMIT
