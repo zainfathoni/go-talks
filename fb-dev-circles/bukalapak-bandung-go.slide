@@ -330,7 +330,7 @@ Even we use [[https://github.com/Fs02/kamimai][my colleague's fork version of ka
 However, it's an opportunity to fill this gap with our open source contribution.
 [[https://hacktoberfest.digitalocean.com][Anybody interested?]] 😏
 
-* Expectations vs Reality #2
+* Expectations vs Reality #3
 
 - Expectation
 
@@ -343,7 +343,19 @@ We are using [[http://jinzhu.me/gorm/][gorm]].
 It has some quirks, and sometimes they're quite dangerous, which made us avoid using its certain features, such as [[http://jinzhu.me/gorm/crud.html#delete][Soft Delete]].
 We found out those quirks in our QA phase.
 
-We are still looking for other ORM library alternatives.
+We are still looking for other alternative ORM libraries.
+
+* Expectations vs Reality #4
+
+- Expectation
+
+Go Interface feature is quite powerful to mock actual implementations for testing purpose.
+
+- Reality
+
+Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
+
+: Even rabbitmq needs another cumbersome wrapper library just to enable testability
 
 * What we learnt
 
@@ -353,8 +365,12 @@ We are still looking for other ORM library alternatives.
 - Database migration tools is incomplete
 - Do not rely too heavily on ORM libraries, test your implementations comprehensively.
 - Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
-: Even rabbitmq needs another cumbersome wrapper library just to enable testability
 
 * References
 
+.link https://tour.golang.org
 .link http://mjk.space/5-things-about-programming-learned-with-go/
+.link https://blog.golang.org/go-fmt-your-code
+.link https://golang.org/doc/faq#Is_Go_an_object-oriented_language
+.link https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091
+
