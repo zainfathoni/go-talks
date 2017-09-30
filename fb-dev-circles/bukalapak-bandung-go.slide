@@ -123,9 +123,9 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 - Multiple assignments & multiple results
 - Error handling
 - Defer statement
-- gotools: gofmt, golint, goreturn, etc.
-- First Class Function
+- First class functions
 - Concurrency
+- gotools: gofmt, golint, goreturn, etc.
 
 * Method Receiver
 
@@ -239,6 +239,12 @@ The deferred call's arguments are evaluated immediately, but the function call i
 
 It is commonly used to defer _'clean_up'_ functions execution.
 It is put right after the _'dirty'_ functions to group the same context together.
+
+* First class functions
+
+It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
+
+.play codes/car/main.go /START Functions OMIT/,/END Functions OMIT/
 
 * Expectations vs Reality
 
