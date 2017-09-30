@@ -125,7 +125,7 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 - Defer statement
 - First class functions
 - Concurrency
-- gotools: gofmt, golint, goreturn, etc.
+- Code Formatting
 
 * Method Receiver
 
@@ -273,6 +273,19 @@ Let's see how we _"share_memory_by_communicating"_ in Go.
 [[https://tour.golang.org/concurrency/1][Goroutines]] communicate using [[https://tour.golang.org/concurrency/2][channels]].
 
 .play codes/concurrency/main.go /START Concurrency OMIT/,/END Concurrency OMIT/
+
+* Code Formatting
+
+.link https://blog.golang.org/go-fmt-your-code go fmt your code
+  
+  gofmt main.go
+
+[[https://golang.org/cmd/gofmt/][Gofmt]] is a tool that automatically formats Go source code. Gofmt'd code is:
+
+- easier to *write*: never worry about minor formatting concerns while hacking away,
+- easier to *read*: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
+- easier to *maintain*: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
+- *uncontroversial*: never have a debate about spacing or brace position ever again!
 
 * Expectations vs Reality
 
