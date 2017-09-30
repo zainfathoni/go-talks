@@ -6,7 +6,7 @@ import "time"
 
 func HeavyComputation(ch chan int32) {
 	// long, serious math stuff
-	time.Sleep(1000 * time.Millisecond)
+	time.Sleep(2 * time.Second)
 
 	ch <- 12345
 }
