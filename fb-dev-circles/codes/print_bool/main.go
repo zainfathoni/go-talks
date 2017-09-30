@@ -7,7 +7,7 @@ import (
 // START PrintBool OMIT
 
 func PrintBool(s string) {
-	if b, err := strconv.ParseBool(s); err == nil {
+	if b, err := strconv.ParseBool(s); err == nil { // HLParseBool
 		println(b)
 	} else {
 		println(err.Error())

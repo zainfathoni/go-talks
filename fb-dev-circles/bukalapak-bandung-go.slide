@@ -102,7 +102,7 @@ e.g. Notification Squad is given the freedom to decide their own teck stacks for
 
 * Considering Go
 
-Just like the other teams, my team which is responsible for [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]] Service is also given the freedom to decide our own tech stacks.
+Just like the other teams, my team which is responsible for [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]] Service is also given the freedom to decide our own tech stacks. 😎
 
 We did it by using an *extremely*dumb* laundry-list comparison as an initial considerations. 🙃
 
@@ -141,7 +141,7 @@ By having *(d*Dog)* as a [[https://tour.golang.org/methods/3][receiver]], we can
 
 .play codes/dog/main.go /START Bark OMIT/,/END Bark OMIT/
 
-*Receiver* enables us to add our logic to any type we want, without modifying the type declaration at all.
+✅ *Receiver* enables us to add our logic to any type we want, without modifying the type declaration at all.
 
 * Interface
 
@@ -156,8 +156,7 @@ We want that animal to *SaySomething()*.
 Then automatically our previous *Dog* type can satisfy this *Animal* interface without needing to change anything in *Dog* declaration & implementation.
 
 .play codes/animal/main.go /START main OMIT/,/END main OMIT/ HLSaySomething
-
-.caption No *implement* keyword required
+.caption ✅ No *implement* keyword required
 
 * Mocking using Interface
 
@@ -169,7 +168,7 @@ We can make sure that *SaySomething()* calls *Speak()* method correctly.
 
 .play codes/cat/main.go /START TestSaySomething OMIT/,/END TestSaySomething OMIT/ HLSaySomething
 
-It's all done without modifying the *Dog* type at all, again.
+✅ It's done without modifying the *Dog* type at all, again.
 
 * Explicit variable declaration & usage checking
 
@@ -187,11 +186,11 @@ So does unused variable.
 
 .play codes/usage/main.go /START main OMIT/,/END main OMIT/
 
-Since Go is a [[https://blog.golang.org/go15gc][*Garbage-Collected*]] language, these are quite important to help us avoid memory leaks.
+✅ Since Go is a [[https://blog.golang.org/go15gc][*Garbage-Collected*]] language, these are quite important to help us avoid memory leaks.
 
 * Multiple assignments & multiple results
 
-Multiple variables can be assigned in a single line.
+✅ Multiple variables can be assigned in a single line.
 
   b, i, s := true, 10, "Bukalapak" // This line is equivalent with the previous 3 lines of assignments
 
@@ -214,20 +213,21 @@ If errors are merely return values why should we treat them differently? We shou
 
 So, instead of using an implicit try-catch block to handle exceptions, we just use the multiple results of functions in Go.
 
-.play codes/print_bool/main.go /START PrintBool OMIT/,/END PrintBool OMIT/
+.play codes/print_bool/main.go /START PrintBool OMIT/,/END PrintBool OMIT/ HLParseBool
+.caption ✅ Catch error as one of the return values, which is *err*
 
 * Error handling
 
 It forces us to handle the error value. It's almost impossible to accidentally ignore the error value.
-If we forget to assign the returned error to a variable:
+❌ If we forget to assign the returned error to a variable:
 
 .play codes/forget_error/main.go /^\tb/,/\)$/
 
-If we forget to use the error value assigned:
+❌ If we forget to use the error value assigned:
 
 .play codes/unused_error/main.go /^\tb/,/\)$/
 
-However, we could still ignore the error *intentionally* by assigning the error into [[https://golang.org/doc/effective_go.html#blank][the blank identifier]]
+✅ However, we could still ignore the error *intentionally* by assigning the error into [[https://golang.org/doc/effective_go.html#blank][the blank identifier]]
 
 .play codes/blank_error/main.go /^\tb/,/\)$/
 
@@ -239,14 +239,15 @@ The deferred call's arguments are evaluated immediately, but the function call i
 
 .play codes/defer/main.go /^func main/,/^}/
 
-It is commonly used to defer _'clean_up'_ functions execution.
+✅ It is commonly used to defer _'clean_up'_ functions execution.
 It is put right after the _'dirty'_ functions to group the same context together.
 
 * First class functions
 
-It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
+✅ It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
 
 .play codes/functions/main.go /START Functions OMIT/,/END Functions OMIT/
+.caption Functions as method arguments
 
 * Concurrency
 
@@ -272,7 +273,7 @@ Let's see how we _"share_memory_by_communicating"_ in Go.
 
 * Concurrency
 
-[[https://tour.golang.org/concurrency/1][Goroutines]] communicate using [[https://tour.golang.org/concurrency/2][channels]].
+✅ [[https://tour.golang.org/concurrency/1][Goroutines]] communicate using [[https://tour.golang.org/concurrency/2][channels]].
 
 .play codes/concurrency/main.go /START Concurrency OMIT/,/END Concurrency OMIT/
 
@@ -284,10 +285,10 @@ Let's see how we _"share_memory_by_communicating"_ in Go.
 
 [[https://golang.org/cmd/gofmt/][Gofmt]] is a tool that automatically formats Go source code. Gofmt'd code is:
 
-- easier to *write*: never worry about minor formatting concerns while hacking away,
-- easier to *read*: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
-- easier to *maintain*: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
-- *uncontroversial*: never have a debate about spacing or brace position ever again!
+- easier to *write* ✅: never worry about minor formatting concerns while hacking away,
+- easier to *read* ✅: when all code looks the same you need not mentally convert others' formatting style into something you can understand.
+- easier to *maintain* ✅: mechanical changes to the source don't cause unrelated changes to the file's formatting; diffs show only the real changes.
+- *uncontroversial* ✅: never have a debate about spacing or brace position ever again!
 
 * Expectations vs Reality
 
@@ -341,6 +342,8 @@ How do we do it in Go?
 .play codes/vehicle/petrol_truck/main.go /START petrolTruck OMIT/,/END petrolTruck OMIT/
 .play codes/vehicle/electric_car/main.go /START electricCar OMIT/,/END electricCar OMIT/
 
+.caption ✅ *Engine* & *Body* can be implemented independently and composed later
+
 * Expectations vs Reality #2
 
 - Expectation
@@ -351,7 +354,7 @@ Database migration tools is reliable enough.
 
 We were using [[https://godoc.org/github.com/pressly/goose][goose]] at first, then we moved to [[https://godoc.org/github.com/eure/kamimai][kamimai]] recently.
 
-Both only support database schema migration, they don't support records migration (yet).
+Both only support database schema migration, they don't support records migration (yet). 🙁
 Even we use [[https://github.com/Fs02/kamimai][my colleague's fork version of kamimai]] to make it run as we expect.
 
 However, it's an opportunity to fill this gap with our open source contribution.
@@ -369,9 +372,10 @@ ORM support is reliable enough.
 
 We are using [[http://jinzhu.me/gorm/][gorm]].
 
-It has some quirks, and sometimes they're quite dangerous, which made us avoid using its certain features, such as [[http://jinzhu.me/gorm/crud.html#delete][Soft Delete]].
-We found out those quirks in our QA phase.
+It has some quirks, and sometimes they're quite dangerous. 😱
+This forces us to avoid using some of its features, such as [[http://jinzhu.me/gorm/crud.html#delete][Soft Delete]].
 
+We found out those quirks in our QA phase. 😰
 We are still looking for other alternative ORM libraries.
 
 * Expectations vs Reality #4
@@ -384,16 +388,16 @@ Go Interface feature is quite powerful to mock actual implementations for testin
 
 Go Interface is powerful indeed, but if complex libraries are not designed with Interface in mind, the mocking efforts will be cumbersome enough for the library users.
 
-e.g. RabbitMQ official [[https://godoc.org/github.com/streadway/amqp][amqp]] library still needs another cumbersome wrapper library such as [[https://godoc.org/github.com/NeowayLabs/wabbit][wabbit]] just to enable code testability by mocking it.
+e.g. RabbitMQ official [[https://godoc.org/github.com/streadway/amqp][amqp]] library still needs another cumbersome wrapper library such as [[https://godoc.org/github.com/NeowayLabs/wabbit][wabbit]] just to enable code testability by mocking it. 😓
 
 * What we learnt
 
 * What we learnt
 
-- Go favors *Composition*over*Inheritance*, so we should code in Go way, not OOP way.
-- Most of database migration libraries in Go are still *incomplete*.
-- Do not rely too heavily on *ORM*libraries*, test your implementations comprehensively.
-- Go Interface is powerful indeed, but if complex libraries are not designed with Interface in mind, the mocking efforts will be cumbersome enough for the library users.
+- Go favors *Composition*over*Inheritance*, so we should code in Go way, not OOP way. ✅
+- Most of database migration libraries in Go are still *incomplete*. 🚸
+- Do not rely too heavily on *ORM*libraries*, test your implementations comprehensively. ⚠️
+- Go *Interface* is powerful indeed, but if complex libraries are not designed with *Interface* in mind, the mocking efforts will be cumbersome enough for the library users. ❇️
 
 * References
 
