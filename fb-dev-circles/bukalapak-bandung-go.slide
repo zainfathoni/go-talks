@@ -244,7 +244,35 @@ It is put right after the _'dirty'_ functions to group the same context together
 
 It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
 
-.play codes/car/main.go /START Functions OMIT/,/END Functions OMIT/
+.play codes/functions/main.go /START Functions OMIT/,/END Functions OMIT/
+
+* Concurrency
+
+_"Don’t_communicate_by_sharing_memory,_share_memory_by_communicating."_
+
+An example of _"communicate_by_sharing_memory"_ in Ruby:
+
+  lock = Mutex.new
+
+  a = Thread.new {
+    lock.synchronize {
+      # access shared resource
+    }
+  }
+
+  b = Thread.new {
+    lock.synchronize {
+      # access shared resource
+    }
+  }
+
+Let's see how we _"share_memory_by_communicating"_ in Go.
+
+* Concurrency
+
+[[https://tour.golang.org/concurrency/1][Goroutines]] communicate using [[https://tour.golang.org/concurrency/2][channels]].
+
+.play codes/concurrency/main.go /START Concurrency OMIT/,/END Concurrency OMIT/
 
 * Expectations vs Reality
 
