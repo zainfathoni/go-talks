@@ -345,9 +345,9 @@ How do we do it in Go?
 
 Database migration tools is reliable enough.
 
-We were using [[https://godoc.org/github.com/pressly/goose][goose]] at first, then we moved to [[https://godoc.org/github.com/eure/kamimai][kamimai]] recently.
-
 - Reality
+
+We were using [[https://godoc.org/github.com/pressly/goose][goose]] at first, then we moved to [[https://godoc.org/github.com/eure/kamimai][kamimai]] recently.
 
 Both only support database schema migration, they don't support records migration (yet).
 Even we use [[https://github.com/Fs02/kamimai][my colleague's fork version of kamimai]] to make it run as we expect.
@@ -357,13 +357,15 @@ However, it's an opportunity to fill this gap with our open source contribution.
 
 * Expectations vs Reality #3
 
+ORM (Object Relational Mapping) in other languages, e.g. Hibernate in Java, Entity Framework in .NET, ActiveRecord in Rails, etc.
+
 - Expectation
 
-ORM (Object Relational Mapping) support is reliable enough.
-
-We are using [[http://jinzhu.me/gorm/][gorm]].
+ORM support is reliable enough.
 
 - Reality
+
+We are using [[http://jinzhu.me/gorm/][gorm]].
 
 It has some quirks, and sometimes they're quite dangerous, which made us avoid using its certain features, such as [[http://jinzhu.me/gorm/crud.html#delete][Soft Delete]].
 We found out those quirks in our QA phase.
@@ -378,18 +380,18 @@ Go Interface feature is quite powerful to mock actual implementations for testin
 
 - Reality
 
-Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
+Go Interface is powerful indeed, but if complex libraries are not designed with Interface in mind, the mocking efforts will be cumbersome enough for the library users.
 
-: Even rabbitmq needs another cumbersome wrapper library just to enable testability
-
-* What we learnt
+e.g. RabbitMQ official [[https://godoc.org/github.com/streadway/amqp][amqp]] library still needs another cumbersome wrapper library such as [[https://godoc.org/github.com/NeowayLabs/wabbit][wabbit]] just to enable code testability by mocking it.
 
 * What we learnt
 
-- Go favors Composition over Inheritance, so we should code in Go way, not OOP way
-- Database migration tools is incomplete
-- Do not rely too heavily on ORM libraries, test your implementations comprehensively.
-- Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
+* What we learnt
+
+- Go favors *Composition*over*Inheritance*, so we should code in Go way, not OOP way.
+- Most of database migration libraries in Go are still *incomplete*.
+- Do not rely too heavily on *ORM*libraries*, test your implementations comprehensively.
+- Go Interface is powerful indeed, but if complex libraries are not designed with Interface in mind, the mocking efforts will be cumbersome enough for the library users.
 
 * References
 
