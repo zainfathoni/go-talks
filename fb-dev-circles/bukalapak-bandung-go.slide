@@ -308,11 +308,36 @@ Since Go provide an Interface feature, we could code in common Object Oriented P
 
 .link https://golang.org/doc/faq#Is_Go_an_object-oriented_language Is Go an object-oriented language? Yes and no.
 
-Go favors Composition over Inheritance, so we should code in Go way, not OOP way
-
 .link https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091 Structuring Applications in Go
 
 If you’re writing Go projects the same way you write Ruby, Java, or Node.js projects then you’re probably going to be fighting with the language.
+
+.link http://mjk.space/5-things-about-programming-learned-with-go/ It's better to compose than inherit
+
+Go favors Composition over Inheritance, so we should code in Go way, not OOP way
+
+* Inheritance Example
+
+.image images/inheritance_level2.png
+.caption _Vehicle_with_inheritance_ in [[http://mjk.space/how-to-avoid-inheritance-in-ruby/][How to avoid inheritance in Ruby?]]
+
+.image images/inheritance_level3.png
+.caption _Vehicle_with_even_more_inheritance_ in [[http://mjk.space/how-to-avoid-inheritance-in-ruby/][How to avoid inheritance in Ruby?]]
+
+* Composition Example
+
+.image images/composition.png
+.caption _Composition_in_action_  in [[http://mjk.space/how-to-avoid-inheritance-in-ruby/][How to avoid inheritance in Ruby?]]
+
+How do we do it in Go?
+
+* Composition in Go
+
+.code codes/vehicle/electric_car/main.go /START Engine Body OMIT/,/END Engine Body OMIT/ HLEngineBody
+.code codes/vehicle/electric_car/main.go /START Vehicle OMIT/,/END Vehicle OMIT/ HLEngineBody
+
+.play codes/vehicle/petrol_truck/main.go /START petrolTruck OMIT/,/END petrolTruck OMIT/
+.play codes/vehicle/electric_car/main.go /START electricCar OMIT/,/END electricCar OMIT/
 
 * Expectations vs Reality #2
 
@@ -369,8 +394,9 @@ Go Interface is powerful indeed, but it is still not sufficient enough to mock c
 * References
 
 .link https://tour.golang.org
-.link http://mjk.space/5-things-about-programming-learned-with-go/
 .link https://blog.golang.org/go-fmt-your-code
 .link https://golang.org/doc/faq#Is_Go_an_object-oriented_language
 .link https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091
+.link http://mjk.space/5-things-about-programming-learned-with-go/
+.link http://mjk.space/how-to-avoid-inheritance-in-ruby/
 
