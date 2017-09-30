@@ -41,11 +41,13 @@ This particular presentation slide is accessible online at:
 Yes, Bukalapak had established a _Representative_Office_ in Bandung for a while.
 One of the teams in the office is developing [[https://www.bukalapak.com/bukapengadaan][BukaPengadaan]], which is using Go.
 
-*What?*Go*—a language developed by *Google*'s team—in a *Facebook* Developer Circles talk?
+*What?*Go?*
+
+A language developed by *Google*'s team in a *Facebook* Developer Circles talk?
 
 .image images/gopher.png 80 _
 
-Well, even Facebook has several open source projects in Go 😁
+Well, even Facebook has tens of open source projects in Go. 😁
 
 .link https://github.com/facebookgo
 
