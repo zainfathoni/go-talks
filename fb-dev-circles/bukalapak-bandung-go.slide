@@ -320,7 +320,7 @@ If you’re writing Go projects the same way you write Ruby, Java, or Node.js pr
 
 Database migration tools is reliable enough.
 
-We were using [[https://godoc.org/github.com/pressly/goose][goose]] at first, then we moved to [[https://godoc.org/github.com/eure/kamimai][kamimai]]
+We were using [[https://godoc.org/github.com/pressly/goose][goose]] at first, then we moved to [[https://godoc.org/github.com/eure/kamimai][kamimai]] recently.
 
 - Reality
 
@@ -330,13 +330,28 @@ Even we use [[https://github.com/Fs02/kamimai][my colleague's fork version of ka
 However, it's an opportunity to fill this gap with our open source contribution.
 [[https://hacktoberfest.digitalocean.com][Anybody interested?]] 😏
 
+* Expectations vs Reality #2
+
+- Expectation
+
+ORM (Object Relational Mapping) support is reliable enough.
+
+We are using [[http://jinzhu.me/gorm/][gorm]].
+
+- Reality
+
+It has some quirks, and sometimes they're quite dangerous, which made us avoid using its certain features, such as [[http://jinzhu.me/gorm/crud.html#delete][Soft Delete]].
+We found out those quirks in our QA phase.
+
+We are still looking for other ORM library alternatives.
+
 * What we learnt
 
 * What we learnt
 
 - Go favors Composition over Inheritance, so we should code in Go way, not OOP way
-- Database migration tools is cumbersome
-- ORM library acts weirdly
+- Database migration tools is incomplete
+- Do not rely too heavily on ORM libraries, test your implementations comprehensively.
 - Go Interface is powerful indeed, but it is still not sufficient enough to mock complex libraries such as ORM libraries
 : Even rabbitmq needs another cumbersome wrapper library just to enable testability
 
