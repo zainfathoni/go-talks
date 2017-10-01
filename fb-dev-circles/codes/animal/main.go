@@ -1,11 +1,11 @@
 package main
 
 type Dog struct {
-	name string
+	name string // HLname
 }
 
 func (d Dog) Speak() string {
-	return "Woof!"
+	return "Woof!, I am " + d.name
 }
 
 // START Animal OMIT
@@ -27,7 +27,7 @@ func SaySomething(a Animal) { // HLSaySomething
 // START main OMIT
 
 func main() {
-	dog := Dog{name: "Charlie"}
+	dog := Dog{name: "Scooby"}
 	SaySomething(dog) // HLSaySomething
 }
 

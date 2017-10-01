@@ -133,15 +133,15 @@ Then we dug down deeper to the nominees, *Rust* and *Go*.
 
 * Method Receiver
 
-Let's say we have a *Dog* type which can *Speak()*.
+🐶 Let's say we have a *Dog* type which has a *name* and can *Speak()*.
 
-.code codes/dog/main.go /START Dog OMIT/,/END Dog OMIT/
+.code codes/dog/main.go /START Dog OMIT/,/END Dog OMIT/ HLname
 
 .code codes/dog/main.go /START Speak OMIT/,/END Speak OMIT/ HLSpeak
 
 By having *(d*Dog)* as a [[https://tour.golang.org/methods/3][receiver]], we can call *Speak()* method this way.
 
-.play codes/dog/main.go /START Bark OMIT/,/END Bark OMIT/
+.play codes/dog/main.go /START main OMIT/,/END main OMIT/ HLSpeak
 
 ✅ *Receiver* enables us to add our logic to any type we want, without modifying the type declaration at all.
 
@@ -162,7 +162,8 @@ Then automatically our previous *Dog* type can satisfy this *Animal* interface w
 
 * Mocking using Interface
 
-We want to test *SaySomething()* by giving it another type to mock *Dog* ability to *Speak()*, let's say it's a *Cat*.
+We want to test *SaySomething()* by giving it another type to mock *Dog* ability to *Speak()*.
+😸 Let's say it's a *Cat* which doesn't have a *name*, but can still *Speak()* properly without saying its name.
 
 .code codes/cat/main.go /START Cat OMIT/,/END Cat OMIT/ HLSpeak
 

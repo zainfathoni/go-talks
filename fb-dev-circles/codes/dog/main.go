@@ -3,7 +3,7 @@ package main
 // START Dog OMIT
 
 type Dog struct {
-	name string
+	name string // HLname
 }
 
 // END Dog OMIT
@@ -11,20 +11,16 @@ type Dog struct {
 // START Speak OMIT
 
 func (d Dog) Speak() string { // HLSpeak
-	return "Woof!"
+	return "Woof!, I am " + d.name
 }
 
 // END Speak OMIT
 
-// START Bark OMIT
-
-func Bark(d Dog) {
-	println(d.Speak())
-}
-
-// END Bark OMIT
+// START main OMIT
 
 func main() {
-	dog := Dog{name: "Charlie"}
-	Bark(dog)
+	dog := Dog{name: "Scooby"}
+	println(dog.Speak()) // HLSpeak
 }
+
+// END main OMIT

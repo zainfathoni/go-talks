@@ -5,7 +5,7 @@ type Dog struct {
 }
 
 func (d Dog) Speak() string {
-	return "Woof!"
+	return "Woof!, I am " + d.name
 }
 
 type Animal interface {
@@ -19,7 +19,6 @@ func SaySomething(a Animal) {
 // START Cat OMIT
 
 type Cat struct {
-	name string
 }
 
 func (c Cat) Speak() string { // HLSpeak
@@ -31,7 +30,7 @@ func (c Cat) Speak() string { // HLSpeak
 // START TestSaySomething OMIT
 
 func TestSaySomething() {
-	cat := Cat{name: "Charlie beta"}
+	cat := Cat{}
 	SaySomething(cat) // HLSaySomething
 }
 
