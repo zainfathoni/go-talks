@@ -365,7 +365,8 @@ However, it's an opportunity to fill this gap with our open source contribution.
 
 * Expectations vs Reality #3
 
-ORM (Object Relational Mapping) in other languages, e.g. Hibernate in Java, Entity Framework in .NET, Active Record in Rails, etc.
+ORM (Object Relational Mapping) is common in other languages,
+e.g. Hibernate in Java, Entity Framework in .NET, Active Record in Rails, etc.
 
 - Expectation
 
