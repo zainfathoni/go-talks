@@ -247,10 +247,10 @@ It is put right after the _'dirty'_ functions to group the same context together
 
 * First class functions
 
-✅ It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
+It's a concept from *Functional*Programming*, where a function can receive other functions as arguments and returns other functions as well.
 
 .play codes/functions/main.go /START Functions OMIT/,/END Functions OMIT/
-.caption Functions as method arguments
+.caption ✅ Functions as method arguments
 
 * Concurrency
 
@@ -365,7 +365,7 @@ However, it's an opportunity to fill this gap with our open source contribution.
 
 * Expectations vs Reality #3
 
-ORM (Object Relational Mapping) in other languages, e.g. Hibernate in Java, Entity Framework in .NET, ActiveRecord in Rails, etc.
+ORM (Object Relational Mapping) in other languages, e.g. Hibernate in Java, Entity Framework in .NET, Active Record in Rails, etc.
 
 - Expectation
 
