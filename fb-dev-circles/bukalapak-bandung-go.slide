@@ -181,11 +181,11 @@ Variables should be declared explicitly.
   var i int = 10   // Declaration & Assignment
   s := "Bukalapak" // Short Declaration & Assignment
 
-Undefined variable causes compilation error.
+❌ Undefined variable causes compilation error.
 
 .play codes/declaration/main.go /START main OMIT/,/END main OMIT/
 
-So does unused variable.
+❌ So does unused variable.
 
 .play codes/usage/main.go /START main OMIT/,/END main OMIT/
 
